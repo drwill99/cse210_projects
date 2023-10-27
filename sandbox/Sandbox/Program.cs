@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Dallin!");
+        Console.WriteLine("Check out the other files in this folder!");
     }
 }
