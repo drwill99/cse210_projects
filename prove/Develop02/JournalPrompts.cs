@@ -7,6 +7,7 @@ public class JournalPrompts
     
     {    
 
+    // All prompts from https://chat.openai.com/
     "What are three things you are grateful for today, and why?",
     "Describe a time when you overcame a significant challenge in your life. What did you learn from that experience?",
     "Write about a goal or dream you have for the future.",
