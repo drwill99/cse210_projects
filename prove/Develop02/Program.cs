@@ -6,7 +6,6 @@ class Program
     {
         int userDecision = -1;
         DisplayWelcomeMessage();
-        //string prompt = GeneratePrompt();
         List<string> userJournal = new List<string>();
         JournalPrompts userPrompt = new JournalPrompts();
         Journal journal = new Journal();
