@@ -2,6 +2,8 @@ using System;
 
 class Program
 {
+
+
     static void Main(string[] args)
 
     
@@ -16,21 +18,17 @@ class Program
         
         Console.WriteLine($"{referance}: {originalScripture}");
 
-
         while(userInput != "quit")
         {
-        
         userInput = Console.ReadLine();
         Console.Clear();
         DisplayScripture scripture = new DisplayScripture(originalScripture);
         scripture.Display();
-        
         }
-
 
         static void Welcome()
         {
-            Console.WriteLine("\nTest your memory! Press Enter to blank out some words. \nType 'quit' when done.");
+        Console.WriteLine("\nTest your memory! Press Enter to blank out some words. \nType 'quit' when done.");
         }
 
 

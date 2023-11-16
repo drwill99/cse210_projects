@@ -2,7 +2,8 @@ using System;
 
 class Word
 {
-    // gets word, replaces word for blank spaces, returns word
+
+
     private string _randomWord;
 
     public Word(string randomWord)

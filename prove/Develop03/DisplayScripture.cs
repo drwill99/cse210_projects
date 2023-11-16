@@ -2,8 +2,9 @@ using System;
 
 class DisplayScripture
 {
+
+
     public string _scripture;
-        
 
     private List<string> blankedScripture = new List<string> {};
 
@@ -15,7 +16,6 @@ class DisplayScripture
         {
             blankedScripture = convertvar;
         }
-
     }
 
     public void Display()
@@ -46,11 +46,8 @@ class DisplayScripture
         string finalScripture = string.Join("", blankedScripture);
         
         Console.WriteLine($"{reference1}: {finalScripture}");
-        
-
     }
 
-    
     private int getMemorizer()
     {
         Random randomNumber = new Random();
