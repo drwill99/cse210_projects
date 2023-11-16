@@ -13,10 +13,10 @@ class Program
 
         Welcome();
 
-        string referance = original.getReference();
+        string reference = original.getReference();
         string originalScripture = original.getScripture();
         
-        Console.WriteLine($"{referance}: {originalScripture}");
+        Console.WriteLine($"{reference}: {originalScripture}");
 
         while(userInput != "quit")
         {
