@@ -8,13 +8,13 @@ class Program
         List<Shapes> shapes = new List<Shapes>();
 
         // Gives parameters for all shapes here and adds them to list
-        Square ss = new Square("Orange", 7);
+        Square ss = new Square("red", 5);
         shapes.Add(ss);
 
-        Circle sc = new Circle("Purple", 3.2);
+        Circle sc = new Circle("blue", 5);
         shapes.Add(sc);
 
-        Rectangle sr = new Rectangle("Yellow", 3, 4.5);
+        Rectangle sr = new Rectangle("yellow", 5, 5);
         shapes.Add(sr);
 
         // Uses a for-each loop to call each function and display each shape
@@ -24,7 +24,7 @@ class Program
 
             double area = s.getArea();
 
-            Console.WriteLine($"The {color} shape has an area of {area}");
+            Console.WriteLine($"The {color} shape has an area of {area} square units.");
         }
 
 
