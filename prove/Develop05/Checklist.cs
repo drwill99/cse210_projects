@@ -1,7 +1,6 @@
 using System;
 
-
-public class CheckListGoal : Goals
+public class ChecklistGoal : Goals
 {
     private int _presentCounter;
     private int _checkCounter;
@@ -9,7 +8,9 @@ public class CheckListGoal : Goals
     private bool _checked = false;
 
 
-    public CheckListGoal(string goalName, string goalDescription, int pointsEarned, int checkCounter, int bonusCompleted, int presentCounter = 0, bool Goalchecked = false) : base(goalName, goalDescription, pointsEarned)
+
+
+    public ChecklistGoal(string goalName, string goalDescription, int pointsEarned, int checkCounter, int bonusCompleted, int presentCounter = 0, bool Goalchecked = false) : base(goalName, goalDescription, pointsEarned)
     {
         
         _title = goalName;
@@ -22,35 +23,32 @@ public class CheckListGoal : Goals
     }
 
 
+
     public int GetCheckCounter()
     {
         return _checkCounter;
     }
-
     public void SetCheckCounter(int checkCounterToSet)
     {
         _checkCounter = checkCounterToSet;
     }
-
     public int GetBonusCompleted()
     {
         return _bonusCompleted;
     }
-
     public void SetBonusCompleted(int BonusCompletedToSet)
     {
         _bonusCompleted = BonusCompletedToSet;
     }
-
     public int GetPresentCounter()
     {
         return _presentCounter;
     }
-
     public void SetPresentCounter(int PresentCounterToSet)
     {
         _presentCounter = PresentCounterToSet;
     }
+
 
 
     public override string GetInformation()
@@ -64,7 +62,6 @@ public class CheckListGoal : Goals
             return $"[ ] {_title} ({_description}) -- Currently completed {GetPresentCounter()}/{_checkCounter}";
         }
     }
-
 
     public override int GetCompleted(int userPoints)
     {
@@ -105,7 +102,7 @@ public class CheckListGoal : Goals
 
     public override string GetRepresentation()
     {
-        return "CheckListGoal:" + _title + "," + _description + "," + _points + "," + _checkCounter + "," + _bonusCompleted + "," + _presentCounter;
+        return "ChecklistGoal:" + _title + "," + _description + "," + _points + "," + _checkCounter + "," + _bonusCompleted + "," + _presentCounter;
     }
 
 
