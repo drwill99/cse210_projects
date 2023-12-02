@@ -1,18 +1,14 @@
 using System;
 
-// Main program class
 class Program
 {
-    // List to store goals
     private static List<Goal> goals = new List<Goal>();
 
-    // Main entry point of program
     static void Main(string[] args)
     {
         int choice;
         do
         {
-            // Display menu options
             Console.WriteLine("Menu Options:");
             Console.WriteLine("1. Create New Goal");
             Console.WriteLine("2. List Goals");
@@ -20,12 +16,9 @@ class Program
             Console.WriteLine("4. Load Goals");
             Console.WriteLine("5. Record Event");
             Console.WriteLine("6. Quit");
-
-            // Prompt user for input
             Console.Write("Enter your choice: ");
             if (int.TryParse(Console.ReadLine(), out choice))
             {
-                // Process user's choice
                 switch (choice)
                 {
                     case 1:
@@ -57,9 +50,10 @@ class Program
             }
 
         } while (choice != 6);
+
+        
     }
 
-    // Method to create new goal based on user input
     private static void CreateNewGoal()
     {
         Console.WriteLine("Choose goal type:");
@@ -70,13 +64,11 @@ class Program
         int typeChoice;
         if (int.TryParse(Console.ReadLine(), out typeChoice))
         {
-            // Gather information for new goal
             Console.Write("Enter goal name: ");
             string name = Console.ReadLine();
             Console.Write("Enter goal value: ");
             int value = int.Parse(Console.ReadLine());
 
-            // Create new goal based on choice
             switch (typeChoice)
             {
                 case 1:
@@ -99,9 +91,10 @@ class Program
         {
             Console.WriteLine("Invalid input. Please enter a number.");
         }
+
+
     }
 
-    // Method to display list of goals and statuses
     private static void ListGoals()
     {
         Console.WriteLine("List of Goals:");
@@ -111,12 +104,10 @@ class Program
         }
     }
 
-    // Method to save goals to a file
     private static void SaveGoals()
     {
         using (StreamWriter sw = new StreamWriter("goals.txt"))
         {
-            // Serialize and write each goal to the file
             foreach (var goal in goals)
             {
                 sw.WriteLine($"{goal.GetType().Name},{goal.Name},{goal.Value}");
@@ -126,7 +117,6 @@ class Program
         Console.WriteLine("Goals saved successfully.");
     }
 
-    // Method to load goals from file
     private static void LoadGoals()
     {
         goals.Clear();
@@ -140,7 +130,6 @@ class Program
                 string name = parts[1];
                 int value = int.Parse(parts[2]);
 
-                // Create and add goals based on loaded data
                 switch (type)
                 {
                     case "SimpleGoal":
@@ -157,13 +146,17 @@ class Program
                         Console.WriteLine($"Unknown goal type: {type}. Skipping.");
                         break;
                 }
+
+
             }
+
+
         }
+
 
         Console.WriteLine("Goals loaded successfully.");
     }
 
-    // Method to record event for selected goal
     private static void RecordEvent()
     {
         Console.WriteLine("Choose goal to record event:");
@@ -181,5 +174,9 @@ class Program
         {
             Console.WriteLine("Invalid goal choice. Please try again.");
         }
+
+
     }
+
+
 }

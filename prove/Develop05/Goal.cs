@@ -1,13 +1,11 @@
-// Base class for goals
-
 public abstract class Goal 
 {
-    protected string _name = ""; // Intialize to empty string to avoid null reference
+    protected string _name = "";
 
     public string Name
     {
-        get { return _name ?? ""; } // Return empty string if _name is null
-        set { _name = value ?? ""; } // Assign empty string if value is null
+        get { return _name ?? ""; }
+        set { _name = value ?? ""; }
     }
 
     protected int _value;
@@ -20,4 +18,6 @@ public abstract class Goal
 
     public abstract void DisplayStatus();
     public abstract void RecordEvent();
+
+    
 }
