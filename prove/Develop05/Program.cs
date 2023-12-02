@@ -9,7 +9,7 @@ class Program
         int choice;
         do
         {
-            Console.WriteLine("Menu Options:");
+            Console.WriteLine("Menu Options: ");
             Console.WriteLine("1. Create New Goal");
             Console.WriteLine("2. List Goals");
             Console.WriteLine("3. Save Goals");
@@ -51,12 +51,12 @@ class Program
 
         } while (choice != 6);
 
-        
+
     }
 
     private static void CreateNewGoal()
     {
-        Console.WriteLine("Choose goal type:");
+        Console.WriteLine("Choose goal type: ");
         Console.WriteLine("1. Simple Goal");
         Console.WriteLine("2. Eternal Goal");
         Console.WriteLine("3. Checklist Goal");
@@ -97,7 +97,7 @@ class Program
 
     private static void ListGoals()
     {
-        Console.WriteLine("List of Goals:");
+        Console.WriteLine("List of Goals: ");
         foreach (var goal in goals)
         {
             goal.DisplayStatus();
