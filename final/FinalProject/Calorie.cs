@@ -9,4 +9,6 @@ public class Calorie
     {
         Console.WriteLine($"Calories Burned: {CaloriesBurned} kcal");
     }
+
+    
 }

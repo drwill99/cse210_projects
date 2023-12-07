@@ -10,4 +10,6 @@ public class StrengthTraining : Activity
         base.DisplayDetails();
         Console.WriteLine($"Sets: {Sets}\nRepetitions: {Repetitions}");
     }
+
+    
 }

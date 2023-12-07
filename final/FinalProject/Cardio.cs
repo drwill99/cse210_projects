@@ -9,4 +9,6 @@ public class Cardio : Activity
         base.DisplayDetails();
         Console.WriteLine($"Heart Rate: {HeartRate} bpm");
     }
+
+    
 }

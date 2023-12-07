@@ -10,4 +10,6 @@ public class FitnessGoal : UserProfile
     {
         Console.WriteLine($"Goal: {GoalDescription}\nTarget Steps: {TargetSteps}");
     }
+
+    
 }

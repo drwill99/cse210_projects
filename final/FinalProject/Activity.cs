@@ -10,4 +10,6 @@ public class Activity
     {
         Console.WriteLine($"Activity: {Name}\nStart Time: {StartTime}\nEnd Time: {EndTime}");
     }
+
+    
 }

@@ -22,5 +22,9 @@ public class FitnessTracker
             activity.DisplayDetails();
             Console.WriteLine("------------");
         }
+
+
     }
+
+    
 }
