@@ -4,24 +4,24 @@ class Program
 {
     static void Main()
     {
-        Cardio running = new Cardio();
+        Cardio cardio = new Cardio();
         Console.WriteLine("Enter details for Cardio Activity");
-        running.Name = PromptForString("Exercise");
-        running.StartTime = PromptForDateTime("Start Time");
-        running.EndTime = PromptForDateTime("End Time");
-        running.HeartRate = PromptForInt("Heart Rate");
+        cardio.Name = PromptForString("Exercise");
+        cardio.StartTime = PromptForDateTime("Start Time");
+        cardio.EndTime = PromptForDateTime("End Time");
+        cardio.HeartRate = PromptForInt("Heart Rate");
 
-        StrengthTraining weightlifting = new StrengthTraining();
+        StrengthTraining strength = new StrengthTraining();
         Console.WriteLine("\nEnter details for Strength Training Activity");
-        weightlifting.Name = PromptForString("Name");
-        weightlifting.StartTime = PromptForDateTime("Start Time");
-        weightlifting.EndTime = PromptForDateTime("End Time");
-        weightlifting.Sets = PromptForInt("Sets");
-        weightlifting.Repetitions = PromptForInt("Repetitions");
+        strength.Name = PromptForString("Name");
+        strength.StartTime = PromptForDateTime("Start Time");
+        strength.EndTime = PromptForDateTime("End Time");
+        strength.Sets = PromptForInt("Sets");
+        strength.Repetitions = PromptForInt("Repetitions");
 
         FitnessTracker tracker = new FitnessTracker();
-        tracker.AddActivity(running);
-        tracker.AddActivity(weightlifting);
+        tracker.AddActivity(cardio);
+        tracker.AddActivity(strength);
 
         Console.WriteLine("\nActivities Entered:");
         tracker.DisplayActivities();
