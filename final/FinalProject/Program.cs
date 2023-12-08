@@ -9,11 +9,16 @@ class Program
         userProfile.Username = PromptForString("Name");
         userProfile.Age = PromptForInt("Age");
 
+        FitnessGoal fitnessGoal = new FitnessGoal();
+        Console.WriteLine("\nEnter details for Fitness Goal");
+        fitnessGoal.GoalDescription = PromptForString("Goal Description");
+        fitnessGoal.TargetSteps = PromptForInt("Target Steps");
+
         Cardio cardio = new Cardio();
         Console.WriteLine("\nEnter details for Cardio Activity");
         cardio.Name = PromptForString("Exercise Name");
-        cardio.StartTime = PromptForDateTime("Start Time");
-        cardio.EndTime = PromptForDateTime("End Time");
+        cardio.StartTime = PromptForDateTime("Start Time (press ENTER to use current time)");
+        cardio.EndTime = PromptForDateTime("End Time (press ENTER to use current time)");
         cardio.HeartRate = PromptForInt("Heart Rate");
 
         StrengthTraining strength = new StrengthTraining();
