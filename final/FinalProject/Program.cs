@@ -26,9 +26,9 @@ class Program
         strength.Name = PromptForString("Exercise Name");
         strength.StartTime = PromptForDateTime("Start Time (press ENTER to use current time)");
         strength.EndTime = PromptForDateTime("End Time (press ENTER to use current time)");
-        strength.Weight = PromptForInt("Weight");
-        strength.Sets = PromptForInt("Sets");
-        strength.Repetitions = PromptForInt("Repetitions");
+        strength.Weight = PromptForInt("Weight (press ENTER to set as 0)");
+        strength.Sets = PromptForInt("Sets (press ENTER to set as 0)");
+        strength.Repetitions = PromptForInt("Repetitions (press ENTER to set as 0)");
 
         FitnessTracker tracker = new FitnessTracker();
         tracker.AddActivity(cardio);
