@@ -4,8 +4,13 @@ class Program
 {
     static void Main()
     {
+        UserProfile userProfile = new UserProfile();
+        Console.WriteLine("\nCreate a Profile");
+        userProfile.Username = PromptForString("Name");
+        userProfile.Age = PromptForInt("Age");
+
         Cardio cardio = new Cardio();
-        Console.WriteLine("Enter details for Cardio Activity");
+        Console.WriteLine("\nEnter details for Cardio Activity");
         cardio.Name = PromptForString("Exercise");
         cardio.StartTime = PromptForDateTime("Start Time");
         cardio.EndTime = PromptForDateTime("End Time");
@@ -16,6 +21,7 @@ class Program
         strength.Name = PromptForString("Name");
         strength.StartTime = PromptForDateTime("Start Time");
         strength.EndTime = PromptForDateTime("End Time");
+        strength.Weight = PromptForInt("Weight");
         strength.Sets = PromptForInt("Sets");
         strength.Repetitions = PromptForInt("Repetitions");
 
