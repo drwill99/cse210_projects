@@ -11,16 +11,16 @@ class Program
 
         Cardio cardio = new Cardio();
         Console.WriteLine("\nEnter details for Cardio Activity");
-        cardio.Name = PromptForString("Exercise");
+        cardio.Name = PromptForString("Exercise Name");
         cardio.StartTime = PromptForDateTime("Start Time");
         cardio.EndTime = PromptForDateTime("End Time");
         cardio.HeartRate = PromptForInt("Heart Rate");
 
         StrengthTraining strength = new StrengthTraining();
         Console.WriteLine("\nEnter details for Strength Training Activity");
-        strength.Name = PromptForString("Name");
-        strength.StartTime = PromptForDateTime("Start Time");
-        strength.EndTime = PromptForDateTime("End Time");
+        strength.Name = PromptForString("Exercise Name");
+        strength.StartTime = PromptForDateTime("Start Time (press ENTER to use current time)");
+        strength.EndTime = PromptForDateTime("End Time (press ENTER to use current time)");
         strength.Weight = PromptForInt("Weight");
         strength.Sets = PromptForInt("Sets");
         strength.Repetitions = PromptForInt("Repetitions");
