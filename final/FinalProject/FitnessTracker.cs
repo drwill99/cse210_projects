@@ -1,6 +1,5 @@
 using System;
 
-// Class representing the main fitness tracker
 public class FitnessTracker
 {
     private List<Activity> activities;

@@ -1,6 +1,5 @@
 using System;
 
-// Base class representing a general activity
 public class Activity
 {
     public string Name { get; set; }

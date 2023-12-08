@@ -1,6 +1,5 @@
 using System;
 
-// Base class representing a user profile
 public class UserProfile
 {
     private string username;

@@ -1,6 +1,5 @@
 using System;
 
-// Derived class for strength training activities
 public class StrengthTraining : Activity
 {
     public int Weight { get; set; }

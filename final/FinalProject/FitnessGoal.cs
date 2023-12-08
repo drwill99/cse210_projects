@@ -1,6 +1,5 @@
 using System;
 
-// Derived class for tracking user's fitness goals
 public class FitnessGoal : UserProfile
 {
     public string GoalDescription { get; set; }
