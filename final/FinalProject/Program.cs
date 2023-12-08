@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
         UserProfile userProfile = new UserProfile();
         Console.WriteLine("\nCreate a Profile");
