@@ -7,7 +7,5 @@ public class Calorie
     public void DisplayCalories()
     {
         Console.WriteLine($"Calories Burned: {CaloriesBurned} kcal");
-    }
-
-    
+    } 
 }

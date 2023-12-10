@@ -19,11 +19,7 @@ public class FitnessTracker
         foreach (var activity in activities)
         {
             activity.DisplayDetails();
-            Console.WriteLine("------------");
+            Console.WriteLine("---------------------------");
         }
-
-
     }
-
-    
 }

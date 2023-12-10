@@ -91,9 +91,5 @@ class Program
             Console.WriteLine("Invalid input. Using default value (0).");
             return 0;
         }
-
-
     }
-
-
 }
